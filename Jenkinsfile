@@ -34,7 +34,8 @@ pipeline {
                 }
             }
             steps {
-                sh 'pyinstaller --onefile sources/add2vals.py'
+                sh 'cdrx/pyinstaller-linux --onefile sources/add2vals.py'
+                
             }
             post {
                 success {
