@@ -15,7 +15,7 @@ pipeline {
         stage('Test') {
             agent {
                 docker {
-                    image 'databricksdocs/pytest'
+                    image 'qnib/pytest'
                 }
             }
             steps {
